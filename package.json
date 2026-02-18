@@ -6,6 +6,7 @@
   "types": "dist/bootstrap/app.d.ts",
   "scripts": {
     "build": "tsc",
+    "build:prod": "tsc && cp -r resources dist/resources && mkdir -p dist/storage/framework/cache/data && mkdir -p dist/database",
     "dev": "tsx watch public/index.ts",
     "start": "node dist/public/index.js",
     "orchestr": "tsx bootstrap/cli.ts",
