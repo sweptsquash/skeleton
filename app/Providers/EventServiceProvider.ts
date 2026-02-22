@@ -13,9 +13,7 @@
  * ```
  */
 
-import {
-  EventServiceProvider as BaseEventServiceProvider,
-} from '@orchestr-sh/orchestr';
+import { EventServiceProvider as BaseEventServiceProvider } from '@orchestr-sh/orchestr';
 
 export class EventServiceProvider extends BaseEventServiceProvider {
   /**

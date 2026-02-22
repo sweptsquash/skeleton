@@ -32,9 +32,7 @@ describe('Database Config', () => {
 
   it('should have default database path', () => {
     delete process.env.DB_DATABASE;
-    expect(databaseConfig.connections.sqlite.database).toBe(
-      'database/database.sqlite'
-    );
+    expect(databaseConfig.connections.sqlite.database).toBe('database/database.sqlite');
   });
 
   it('should use DB_DATABASE from environment', async () => {

@@ -14,9 +14,7 @@ export default {
    * View file directories.
    * Defaults to [<basePath>/resources/views].
    */
-  paths: [
-    path.join(process.cwd(), 'resources', 'views'),
-  ],
+  paths: [path.join(process.cwd(), 'resources', 'views')],
 
   /**
    * Supported file extensions (tried in order).

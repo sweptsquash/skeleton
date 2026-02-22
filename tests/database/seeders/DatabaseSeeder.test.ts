@@ -18,11 +18,11 @@ describe('DatabaseSeeder', () => {
 
   it('should run without errors', async () => {
     const consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
-    
+
     await expect(seeder.run()).resolves.not.toThrow();
-    
+
     expect(consoleSpy).toHaveBeenCalledWith('Database seeded successfully.');
-    
+
     consoleSpy.mockRestore();
   });
 });

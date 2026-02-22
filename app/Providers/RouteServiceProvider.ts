@@ -4,9 +4,7 @@
  * Loads your application's route files.
  */
 
-import {
-  RouteServiceProvider as BaseRouteServiceProvider,
-} from '@orchestr-sh/orchestr';
+import { RouteServiceProvider as BaseRouteServiceProvider } from '@orchestr-sh/orchestr';
 
 export class RouteServiceProvider extends BaseRouteServiceProvider {
   /**

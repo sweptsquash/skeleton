@@ -11,14 +11,14 @@ on:
     branches:
       - main
     paths:
-      - "**.ts"
-      - "package-lock.json"
+      - '**.ts'
+      - 'package-lock.json'
   pull_request:
     branches:
       - main
     paths:
-      - "**.ts"
-      - "package-lock.json"
+      - '**.ts'
+      - 'package-lock.json'
 
 jobs:
   test-types:

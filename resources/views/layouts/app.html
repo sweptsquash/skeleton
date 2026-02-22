@@ -1,33 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@yield('title', 'Orchestr')</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, sans-serif; background: #f8fafc; color: #1e293b; }
-    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-    header { background: #1e293b; color: white; padding: 1rem 0; margin-bottom: 2rem; }
-    header .container { display: flex; align-items: center; gap: 1rem; }
-    header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
-    main { min-height: 60vh; }
-    footer { margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid #e2e8f0; color: #94a3b8; font-size: 0.875rem; text-align: center; }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>{{ appName }}</h1>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@yield('title', 'Orchestr')</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: #f8fafc;
+        color: #1e293b;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      header {
+        background: #1e293b;
+        color: white;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+      }
+      header .container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+      main {
+        min-height: 60vh;
+      }
+      footer {
+        margin-top: 3rem;
+        padding: 1.5rem 0;
+        border-top: 1px solid #e2e8f0;
+        color: #94a3b8;
+        font-size: 0.875rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>{{ appName }}</h1>
+      </div>
+    </header>
 
-  <main class="container">
-    @yield('content')
-  </main>
+    <main class="container">@yield('content')</main>
 
-  <footer>
-    <p>Powered by Orchestr &mdash; A Laravel-inspired TypeScript framework</p>
-  </footer>
-</body>
+    <footer>
+      <p>Powered by Orchestr &mdash; A Laravel-inspired TypeScript framework</p>
+    </footer>
+  </body>
 </html>

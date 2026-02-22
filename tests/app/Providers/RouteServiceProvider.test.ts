@@ -25,7 +25,7 @@ describe('RouteServiceProvider', () => {
     app.register(provider);
     // Boot the app which will call boot() on all providers
     await app.boot();
-    
+
     // If we get here without errors, routes were loaded successfully
     expect(true).toBe(true);
   });

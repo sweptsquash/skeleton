@@ -1,39 +1,52 @@
-@extends('layouts.app')
+@extends('layouts.app') @section('title')Welcome to Orchestr@endsection @section('content')
+<div style="padding: 3rem 0">
+  <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a">Hello, {{ name }}!</h2>
 
-@section('title')Welcome to Orchestr@endsection
+  <p style="font-size: 1.125rem; color: #475569; margin-bottom: 2rem; max-width: 600px">
+    Welcome to <strong>Orchestr</strong> &mdash; a 1:1 Laravel replica in TypeScript. Your server is up and running.
+  </p>
 
-@section('content')
-  <div style="padding: 3rem 0;">
-    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">
-      Hello, {{ name }}!
-    </h2>
-
-    <p style="font-size: 1.125rem; color: #475569; margin-bottom: 2rem; max-width: 600px;">
-      Welcome to <strong>Orchestr</strong> &mdash; a 1:1 Laravel replica in TypeScript.
-      Your server is up and running.
-    </p>
-
-    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
-      <a href="/health" style="display: inline-block; background: #1e293b; color: white; padding: 0.625rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600;">
-        Health Check
-      </a>
-      <a href="https://github.com/orchestr-sh/orchestr" style="display: inline-block; border: 2px solid #1e293b; color: #1e293b; padding: 0.625rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600;">
-        Documentation
-      </a>
-    </div>
-
-    @if(features.length > 0)
-      <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">
-        Framework Features
-      </h3>
-      <ul style="list-style: none; display: grid; gap: 0.5rem; max-width: 500px;">
-        @foreach(features as feature)
-          <li style="display: flex; align-items: center; gap: 0.5rem; color: #334155;">
-            <span style="color: #22c55e; font-weight: 700;">&#10003;</span>
-            {{ feature }}
-          </li>
-        @endforeach
-      </ul>
-    @endif
+  <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem">
+    <a
+      href="/health"
+      style="
+        display: inline-block;
+        background: #1e293b;
+        color: white;
+        padding: 0.625rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 600;
+      "
+    >
+      Health Check
+    </a>
+    <a
+      href="https://github.com/orchestr-sh/orchestr"
+      style="
+        display: inline-block;
+        border: 2px solid #1e293b;
+        color: #1e293b;
+        padding: 0.625rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 600;
+      "
+    >
+      Documentation
+    </a>
   </div>
+
+  @if(features.length > 0)
+  <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a">Framework Features</h3>
+  <ul style="list-style: none; display: grid; gap: 0.5rem; max-width: 500px">
+    @foreach(features as feature)
+    <li style="display: flex; align-items: center; gap: 0.5rem; color: #334155">
+      <span style="color: #22c55e; font-weight: 700">&#10003;</span>
+      {{ feature }}
+    </li>
+    @endforeach
+  </ul>
+  @endif
+</div>
 @endsection
