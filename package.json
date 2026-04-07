@@ -30,23 +30,23 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@orchestr-sh/orchestr": "^1.9.0",
+    "@orchestr-sh/orchestr": "^1.11.1",
     "better-sqlite3": "^11.0.0",
     "drizzle-orm": ">=0.30.0",
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.9",
-    "@types/node": "^22.10.5",
-    "@vitest/coverage-v8": "^2.1.8",
-    "oxfmt": "^0.42.0",
-    "oxlint": "^1.57.0",
-    "oxlint-tsgolint": "^0.18.1",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.3",
-    "vitest": "^2.1.8"
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.5.0",
+    "@vitest/coverage-v8": "^4.1.2",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "oxlint-tsgolint": "^0.20.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "^22.14.0 || >=24.0.0"
   }
 }
